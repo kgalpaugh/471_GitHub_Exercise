@@ -31,7 +31,7 @@ private:
     BSTNode<Key, E>* getmin(BSTNode<Key, E>*);
     BSTNode<Key, E>* removehelp(BSTNode<Key, E>*, const Key&);
     E* findhelp(BSTNode<Key, E>*, const Key&) const;
-    void printhelp(BSTNode<Key, E>*, int) const;
+    void printPreOrder(BSTNode<Key, E>*, int) const;
     void visit(BSTNode<Key, E>*) const;
 
 public:
