@@ -89,7 +89,12 @@ public:
 
   void print() const { // Print the contents of the BST
     if (root == NULL) cout << "The BST is empty.\n";
-    else printhelp(root, 0);
+    else 
+    {
+      printhelp(root, 0);
+      printPreOrder(root, 0);
+      printPostOrder(root, 0);
+    }
   }
   
 };
@@ -197,3 +202,4 @@ printhelp(BSTNode<Key, E>* root, int level) const {
   visit(root);						  // Print node value
   printhelp(root->right(), level+1);  // Do right subtree
 }
+
